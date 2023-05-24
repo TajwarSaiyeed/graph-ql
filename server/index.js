@@ -10,6 +10,10 @@ const app = express();
 // connect to database
 connectDB();
 
+// routes
+
+// any data
+
 app.use(
   "/graphql",
   graphqlHTTP({
