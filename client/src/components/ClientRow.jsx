@@ -2,7 +2,7 @@ import { useMutation } from "@apollo/client";
 import PropTypes from "prop-types";
 import { FaTrash } from "react-icons/fa";
 import { DELETE_CLIENT } from "../mutations/clientMutation";
-import { GET_CLIENTS } from "../queries/queries";
+import { GET_CLIENTS } from "../queries/clientQueries";
 
 const ClientRow = ({ client }) => {
   const [deleteClient] = useMutation(DELETE_CLIENT, {
